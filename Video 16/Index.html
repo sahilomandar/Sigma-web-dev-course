@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* Element Selector */
+
+        div {
+            /* background-color: gold; */
+        }
+
+        /* Class Selector */
+
+        .gold {
+            background-color: gold;
+        }
+
+        /* ID Selector */
+
+        #yellow {
+            background-color: yellow;
+        }
+
+        /* Child Selector */
+
+        div>p {
+            background-color: black;
+            color: white;
+        }
+
+        /* Descendant Selector */
+
+        div p {
+            background-color: black;
+            color: white;
+        }
+
+        /* Universal Selector */
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Pseudo Selector */
+
+        a:visited {
+            color: green;
+        }
+
+        a:link {
+            color: grey;
+        }
+
+        a:active {
+            background-color: purple;
+        }
+
+        a:hover {
+            background-color: blue;
+        }
+
+        p:first-child {
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="one">
+        <p>I am First</p>
+        <p>I am Second</p>
+    </div>
+    <div class="gold">
+        I am Sahil
+        <p>Hie I am Learning Web Development</p>
+    </div>
+    <div id="yellow">
+        I am Div
+    </div>
+    <div>
+        <a href="https://www.google.com">Google</a>
+        <a href="https://www.Facebook2.com">Facebook</a>
+    </div>
+</body>
+
+</html>
