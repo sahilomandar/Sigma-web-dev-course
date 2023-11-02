@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Specificity & Cascade</title>
+    <style>
+        /* The specificity of this selector is 1 */
+        h1 {
+            color: aqua;
+        }
+
+        /* The specificity of the selector is 1 + 10 = 11 */
+        h1.yellow {
+            color: yellow;
+        }
+
+        /* The specificity of the selector is 10 */
+        .cblue {
+            color: blue;
+        }
+
+        /* The specificity of the selector is 10 */
+        .cpurple {
+            color: purple;
+        }
+
+        /* The is an example of attribute selector. The specificity of the selector is 10 */
+        /* [data-x=a]{
+            background-color: yellow;
+        } */
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1 class="yellow cblue cpurple" data-x="a">I am Learning CSS Specificity & Cascade</h1>
+    </div>
+</body>
+
+</html>
