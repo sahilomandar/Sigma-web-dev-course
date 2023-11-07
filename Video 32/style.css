@@ -1,0 +1,41 @@
+:root {
+    --color: rgb(255, 55, 255);
+    --seccolor: rgb(0, 166, 255);
+    --defpad: 59px;
+    --defborder-radius: 60px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    display: flex;
+    
+}
+
+ul li{
+    border: 6px solid yellowgreen;
+    border-radius: var(--defborder-radius);
+    list-style: none;
+    margin: 5px;
+    padding: var(--defpad);
+    color: var(--color);
+    font-size: 25px;
+}
+
+ul li:first-child{
+    background-color: var(--seccolor);
+}
+ul li:first-line{
+    background-color: yellow;
+
+}
+div{
+    background-color: antiquewhite;
+}
+
+body{
+    background-color: aqua;
+}
