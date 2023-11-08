@@ -39,3 +39,19 @@ div{
 body{
     background-color: aqua;
 }
+
+@media screen and (orientation: landscape) {
+    body {
+        border: 2px; solid: yellow;
+    }
+}
+
+@media only screen and (max-width: 455px) {
+    body {
+        background-color: rgb(17, 255, 0);
+    }
+}
+
+li{
+    flex-direction: column;
+}
