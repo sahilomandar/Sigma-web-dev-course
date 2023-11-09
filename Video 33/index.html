@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Float & Clear</title>
+    <style>
+        .cards {
+            border: 2px solid black;
+            display: flow-root;
+        }
+
+        img {
+            float: left;
+        }
+
+        .card {
+            border: 2px solid red;
+        }
+
+        .card:nth-child(2){
+            background-color:aqua;
+            clear:both;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cards">
+        <img src=https://media.wired.com/photos/5fb70f2ce7b75db783b7012c/master/w_960,c_limit/Gear-Photos-597589287.jpg
+            alt="" width="300px">
+        <div class="card">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit libero eveniet corporis, impedit quibusdam
+                distinctio dolores aperiam molestiae sint, sunt ipsam neque veniam alias rerum saepe minus magni aut
+                maiores facilis cumque eius ut totam! Aspernatur nostrum voluptatem dolorem distinctio? Doloremque
+                repudiandae accusantium quis expedita.</p>
+        </div>
+        <div class="card">Card 2</div>
+        <div class="card">Card 3</div>
+    </div>
+</body>
+
+</html>
