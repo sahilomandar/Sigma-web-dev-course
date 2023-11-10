@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on CSS Selector</title>
+    <style>
+
+/* .box:first-child{
+    background-color: blueviolet;
+} */
+
+/* .box::first-line{
+    color: yellow;
+} */
+
+/* .boxes *{
+    color:blue;
+    border: 2px solid purple;
+} */
+
+/* p, a, .box, [data-color="primary"]{
+    padding-top: 50px;
+} */
+
+/* .box:nth-child(odd){
+    background-color: aqua;
+} */
+
+/* .box:nth-last-child(1){
+    background-color: blanchedalmond;
+} */
+
+.boxes::before{
+    content: "I am a good Boy";
+    color: rgb(0, 26, 255);
+}
+
+.boxes::after{
+    content: "I am Learning Web Development";
+    color: rgb(238, 0, 255);
+}
+
+::selection{
+    background-color: rgb(0, 0, 0);
+color: rgb(177, 34, 34);
+}
+
+.box::first-letter{
+    color: gold;
+    font-size: 50px;
+}
+
+input::placeholder{
+    color: orange;
+}
+
+    </style>
+</head>
+
+<body>
+<div class="boxes">
+    <div data-color="primary" class="box">I am First Box</div>
+    <div class="box">Hey it's a Box</div>
+    <div class="box">Hey it's a Box</div>
+    <input type="text" placeholder="Type your name here">
+</div>
+</body>
+
+</html>
