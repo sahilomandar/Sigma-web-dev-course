@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout of Website</title>
+    <style>
+        * {
+            margin: 0;
+            /* padding: 0; */
+        }
+
+        :root {
+
+            background-color: cornflowerblue;
+        }
+        nav {
+                position: fixed;
+                top: 0;
+                width: 100%;
+            }
+
+        nav {
+            background-color: rgb(82, 223, 223);
+            border: 2px solid black;
+            padding: 15px;
+            text-align: center;
+            color: rgb(1, 63, 63);
+            font-weight: bolder;
+            font-size: medium;
+        }
+
+        .parent {
+            border: none;
+            margin: 1rem;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .box {
+            display: inline-block;
+            border: 2px solid black;
+            background-color: gold;
+            padding: 200px;
+            margin: 15px;
+            margin-top: 70px;
+            height: 50px;
+            vertical-align: middle;
+        }
+
+        p {
+            border: 2px solid black;
+            background-color: pink;
+            border-radius: 25px;
+            height: auto;
+            width: auto;
+            text-align: center;
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background-color: rgb(255, 120, 1);
+            border: 2px solid black;
+            padding: 15px;
+            text-align: center;
+            color: rgb(110, 58, 13);
+            font-weight: bolder;
+            font-size: medium;
+            margin-bottom: 0;
+        }
+
+        button {
+            width: 48px;
+            height: 48px;
+            background-color: rgb(162, 248, 251);
+            border-radius: 100%;
+            margin-left: 92%;
+            margin-bottom: 10px;
+            position: sticky;
+            top: 10px;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>Nav Bar</nav>
+    </header>
+    <div class="parent">
+        <div class="box">1 Box</div>
+        <div class="box">2 Box</div>
+    </div>
+    <div>
+        <p>A collection of web pages and media over the internet is called a website. The website can be published on at
+            least one web server and can be identified by a common domain name, for example - javatpoint.com,
+            google.com,
+            youtube.com. All the websites that are accessible publicly come under the World Wide Web.</p>
+    </div>
+    <button>Chat</button>
+    <footer>
+        Footer Bar
+    </footer>
+</body>
+
+</html>
