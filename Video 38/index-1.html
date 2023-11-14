@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+        .container {
+            width: 80vw;
+            height: 100vh;
+            border: 2px solid black;
+            display: grid;
+            /* grid-template-columns: [First] 120px [Second] 100px [t]; */
+            /* grid-template-rows: 100px 100px 100px; */
+            /* grid-template-columns: 1fr 2fr 1fr; */
+            /* grid-template-columns: repeat(4, 1fr); */
+            /* grid-template-columns: repeat(4, minmax(100px, 1fr)); */
+            grid-template-columns: repeat(4, 80px);
+            grid-template-rows: repeat(2, 80px);
+            /* gap: 30px; */
+            row-gap: 50px;
+            column-gap: 100px;
+            /* justify-items: center; */
+            /* align-items: center; */
+            place-content: center;
+            align-content: center;
+        }
+
+        .items {
+            border: 2px solid greenyellow;
+            height: 55px;
+            width: 55px;
+
+        }
+
+        .itme-4 {
+            /* grid-row: 1/2; */
+            /* or you can do */
+            /* grid-row-start: 1; */
+            /* grid-row-end: 2; */
+
+            /* same thing */
+            /* grid-column: 1/2; */
+        }
+
+        .item-1 {
+            /* grid-row: 1/2; */
+            /* grid-column: First/t; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="items item-1">1</div>
+        <div class="items">2</div>
+        <div class="items">3</div>
+        <div class="items itme-4">4</div>
+        <div class="items">5</div>
+    </div>
+</body>
+
+</html>
