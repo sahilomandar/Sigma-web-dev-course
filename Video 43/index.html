@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animations</title>
+    <style>
+        .container {
+            background-color: aqua;
+            height: 80vh;
+            width: 30vw;
+        }
+
+        .box {
+            width: 35px;
+            height: 50px;
+            /* background-color: antiquewhite; */
+            /* animation-name: Sahilanimation; */
+            /* animation-duration: 2s; */
+            /* animation-iteration-count: 3; */
+            /* animation-iteration-count: infinite; */
+            /* animation-timing-function: cubic-bezier(0, -0.06, 0, 0.49); */
+            /* animation-delay: 1s; */
+            /* animation-direction: reverse; */
+            /* animation-play-state: paused; */
+            animation: Sahilanimation 3s ease-in-out 1s 1, Sahil1 3s ease-in-out 3s 1;
+        }
+
+        @keyframes Sahilanimation {
+            from {
+                background-color: black;
+            }
+
+            to {
+                background-color: blue;
+                transform: translateX(1000px);
+            }
+
+        }
+
+        @keyframes Sahil1 {
+            0% {
+                transform: rotate(100deg);
+            }
+
+            20% {
+                transform: rotate(200deg);
+            }
+
+            50% {
+                transform: rotate(220deg);
+            }
+
+            80% {
+                transform: rotate(300deg);
+            }
+
+            100% {
+                transform: rotate(320deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            Box
+        </div>
+    </div>
+</body>
+
+</html>
