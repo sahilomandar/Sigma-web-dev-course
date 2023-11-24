@@ -5,93 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Navbar using Flexbox</title>
-    <style>
-        .logo {
-            /* background-color: rgb(244, 140, 4); */
-        }
-
-        .logo img {
-            width: 164px;
-        }
-
-        nav {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            font-family: 'Segoe UI';
-        }
-
-        .right ul {
-            display: flex;
-            gap: 34px;
-        }
-
-        .right ul li {
-            list-style: none;
-            display: flex;
-            align-items: center;
-            cursor: pointer;
-        }
-
-        .right ul li span {
-            padding: 0 5px;
-        }
-
-        .maincontainer {
-            text-align: center;
-            font-family: 'Segoe UI';
-            margin-top: 60px;
-        }
-
-        .inner_text h1 a img {
-            width: 70px;
-        }
-
-        h1 {
-            font-weight: 490;
-        }
-
-        .inner_text h1 span {
-            font-weight: bolder;
-        }
-
-        .secondline div h3 {
-            font-weight: 390;
-        }
-
-        .downloadbutton a {
-            border-radius: 5px;
-            font-size: 10px;
-            padding: 10px;
-            text-decoration: none;
-            font-weight: bold;
-            background-color: #00b6d1;
-            color: white;
-
-        }
-
-        .hotfix {
-            margin-right: 130px;
-        }
-
-        .hotfix div h3 span {
-            font-weight: lighter;
-            padding-left: 15px;
-            
-        }
-
-        .hotfix div h3 small{
-            font-weight: lighter;
-            font-size: 10px;
-        }
-
-        .hotfix div h3 a{
-            font-weight: lighter;
-            font-size: 10px;
-            text-decoration: none;
-            color: black;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -141,42 +55,97 @@
             </div>
         </nav>
     </header>
+    <main>
+        <div class="maincontainer">
+            <div>
+                <div class="inner_text">
+                    <h1>
+                        Download <span>UltraEdit</span> for Windows
+                        <a href="https://www.g2.com/products/ultraedit/reviews">
+                            <img src="https://www.ultraedit.com/wp-content/uploads/2022/10/Reviews.png" alt="">
+                        </a>
+                    </h1>
+                </div>
+            </div>
+            <div class="secondline">
+                <div>
+                    <h3>Download and try UltraEdit before you buy it! This Download includes the full windows <br>
+                        version
+                        of the
+                        text editor.
+                    </h3>
+                </div>
+            </div>
+            <div class="downloadbutton">
+                <a href="https://www.ultraedit.com/downloads/uex-thank-you/">DOWNLOAD MAC OR LINUX VERSION</a>
+            </div>
+            <div class="hotfix">
+                <div>
+                    <h3>
+                        <img src="https://www.ultraedit.com/wp-content/uploads/2022/11/UE.png" alt="">
+                        <span>Download UltraEdit</span>
+                        <small>
+                            v2023.1(released 08/16/2023) |
+                        </small>
+                        <a href="https://www.ultraedit.com/updates/uehotfix/">Hotfix</a>
+                    </h3>
+                </div>
+            </div>
+        </div>
+        <div class="grid">
+            <div class="item">
+                <div class="item-lang">English</div>
+                <button class="btn blue">Download 32-bit</button>
+                <button class="btn green">Download 62-bit</button>
+            </div>
+            <div class="item">
+                <div class="item-lang">English</div>
+                <button class="btn blue">Download 32-bit</button>
+                <button class="btn green">Download 62-bit</button>
+            </div>
+            <div class="item">
+                <div class="item-lang">English</div>
+                <button class="btn blue">Download 32-bit</button>
+                <button class="btn green">Download 62-bit</button>
+            </div>
+            <div class="item">
+                <div class="item-lang">English</div>
+                <button class="btn blue">Download 32-bit</button>
+                <button class="btn green">Download 62-bit</button>
+            </div>
+            <div class="item">
+                <div class="item-lang">English</div>
+                <button class="btn blue">Download 32-bit</button>
+                <button class="btn green">Download 62-bit</button>
+            </div>
+            <div class="item">
+                <div class="item-lang">English</div>
+                <button class="btn blue">Download 32-bit</button>
+                <button class="btn green">Download 62-bit</button>
+            </div>
+            <div class="item">
+                <div class="item-lang">English</div>
+                <button class="btn blue">Download 32-bit</button>
+                <button class="btn green">Download 62-bit</button>
+            </div>
+            <div class="item">
+                <div class="item-lang">English</div>
+                <button class="btn blue">Download 32-bit</button>
+                <button class="btn green">Download 62-bit</button>
+            </div>
+            <div class="item">
+                <div class="item-lang">English</div>
+                <button class="btn blue">Download 32-bit</button>
+                <button class="btn green">Download 62-bit</button>
+            </div>
+            <div class="item">
+                <div class="item-lang">English</div>
+                <button class="btn blue">Download 32-bit</button>
+                <button class="btn green">Download 62-bit</button>
+            </div>
+        </div>
+    </main>
 
-    <div class="maincontainer">
-        <div>
-            <div class="inner_text">
-                <h1>
-                    Download <span>UltraEdit</span> for Windows
-                    <a href="https://www.g2.com/products/ultraedit/reviews">
-                        <img src="https://www.ultraedit.com/wp-content/uploads/2022/10/Reviews.png" alt="">
-                    </a>
-                </h1>
-            </div>
-        </div>
-        <div class="secondline">
-            <div>
-                <h3>Download and try UltraEdit before you buy it! This Download includes the full windows <br> version
-                    of the
-                    text editor.
-                </h3>
-            </div>
-        </div>
-        <div class="downloadbutton">
-            <a href="https://www.ultraedit.com/downloads/uex-thank-you/">DOWNLOAD MAC OR LINUX VERSION</a>
-        </div>
-        <div class="hotfix">
-            <div>
-                <h3>
-                    <img src="https://www.ultraedit.com/wp-content/uploads/2022/11/UE.png" alt="">
-                    <span>Download UltraEdit</span>
-                    <small>
-                        v2023.1(released 08/16/2023) |
-                    </small>
-                    <a href="https://www.ultraedit.com/updates/uehotfix/">Hotfix</a>
-                </h3>
-            </div>
-        </div>
-    </div>
 </body>
 
 </html>
