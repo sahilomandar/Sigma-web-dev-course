@@ -22,24 +22,26 @@
             border-radius: 70px;
             bottom: 0;
             position: absolute;
-            left: 0;
-            animation-iteration-count: infinite;
-            animation-name: Bounce;
-            animation-delay: 1s;
-            animation-duration: 2s;
-            transition-timing-function:ease-in-out;
-            animation-direction: normal;
-            animation-fill-mode: forwards;
+            animation: BounceX 3s linear infinite, BounceY 1s ease-out infinite alternate;
         }
 
-        @keyframes Bounce {
-            /* from {
-               transform: translateY(-0px);
-            } */
-/* 
+        @keyframes BounceX {
+            from {
+               left: 0;
+            } 
+
             to {
-                transform: translateX(820px);
-            } */
+               left: 100%; 
+            }
+        }
+        @keyframes BounceY {
+            from {
+               bottom: 0;
+            } 
+
+            to {
+                bottom: 100%;
+            }
         }
     </style>
 </head>
