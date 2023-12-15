@@ -1,4 +1,4 @@
-/* Create a Faulty calculator using JavasScript
+/* Create a Faulty calculator using JavaScript
 
 This faulty calculator does following:
 1. It takes two numbers as input from the user
